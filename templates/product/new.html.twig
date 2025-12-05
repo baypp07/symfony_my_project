@@ -2,5 +2,11 @@
 {% block body %}
 <h1> new product </h1>
 
-{{ form(form)}}
+{{ form_start (form) }}
+{{ form_row( form.name) }}
+{{ form_row( form.description) }}
+{{ form_row(form.size) }}
+{{ form_row(form.save, {'label': 'Save'}) }}
+{{ form_ end (form) }}
+
 {% endblock %}
